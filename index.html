@@ -12,7 +12,7 @@
 <body>
     <header id="header">
         <div class="header_wrap">
-            <h1 class="logo"><img src="css/images/design_cafe_logo_header@2x.png" alt="デザインカフェ"></h1>
+            <h1 class="logo"><img src="images/design_cafe_logo_header@2x.png" alt="デザインカフェ"></h1>
             <nav class="pc_nav">
             <ul>
                 <li><a href="#ABOUT">ABOUT US</a></li>
@@ -22,9 +22,26 @@
                 <li><a href="#ACCESS">ACCESS</a></li>
             </ul>
             </nav>
+            
+            <div class="sp_btn"><span></span></div>
+            <nav class="sp_nav">
+                <ul>
+                    <li><a href="#ABOUT">ABOUT US</a></li>
+                    <li><a href="#MENU">MENU</a></li>
+                    <li><a href="#GALLERY">GALLERY</a></li>
+                    <li><a href="#EVENT">EVENT</a></li>
+                    <li><a href="#ACCESS">ACCESS</a></li>
+                </ul>
+                </nav>
         </div>
         <ul class="slider">
-            <li><img src="css/images/pc_first-100.jpg" alt=""></li>
+            <li>
+                <picture>
+                    <source srcset="images/sp_main_vs
+                    @2x-100.jpg" media="(max-width:767px)">
+                    <img src="images/pc_first-100.jpg" alt=""></li>
+                </picture>
+                
         </ul>
     </header>
     
@@ -41,11 +58,11 @@
         <section class="about_us" id="ABOUT">
             
             <div class="about_us_img">
-                <img src="css/images/pc_about-100.jpg" alt="こだわりのコーヒー">
+                <img src="images/pc_about-100.jpg" alt="こだわりのコーヒー">
             </div>
 
             <div class="about_us_text">
-                <h2 class="about_logo"><img src="css/images/about_us@2x.png" alt="about us"></h2>
+                <h2 class="about_logo"><img src="images/about_us@2x.png" alt="about us"></h2>
                     <p class="about_title">私たちが提供する
                         <br>こだわりのコーヒー
                     </p>
@@ -58,12 +75,12 @@
 
         <section class="menu" id="MENU">
             <div>
-                <h3 class="menu_logo"><img src="css/images/menu@2x.png" alt="menu"></h3>
+                <h3 class="menu_logo"><img src="images/menu@2x.png" alt="menu"></h3>
             </div>
             
             <div class="wrap">
                 <div class="item">
-                    <img src="css/images/pc_menu_drink-100.jpg">
+                    <img src="images/pc_menu_drink-100.jpg">
                     <div class="drink">
                     <h3>Drink</h3>
                     <p>ドリンクメニューの概要を100文字程度で紹介します。素材やこだわりなどをアピールしていきます。</p>
@@ -71,7 +88,7 @@
                 </div>
             
                 <div class="item">
-                    <img src="css/images/pc_menu_food-100.jpg">
+                    <img src="images/pc_menu_food-100.jpg">
                     <div class="food">
                     <h3>Food</h3>
                     <p>フードメニューの概要を100文字程度で紹介します。素材やこだわりなどをアピールしていきます。</p>
@@ -79,50 +96,44 @@
                 </div>
         
                 <div class="item">
-                    <img src="css/images/pc_menu_sweets-100.jpg">
+                    <img src="images/pc_menu_sweets-100.jpg">
                     <div class="sweets">
                     <h3>Sweets</h3>
                     <p>スイーツメニューの概要を100文字程度で紹介します。素材やこだわりなどをアピールしていきます。</p>
                     </div>
                 </div>
+        </section>
 
-            </div>
         <section class="gallery" id="GALLERY">
-            <h3 class="gallery_logo"><img src="css/images/gallery@2x.png" alt="gallery"></h3>
+            <h3 class="gallery_logo"><img src="images/gallery@2x.png" alt="gallery"></h3>
 
             <ul class="gallery_wrap">
-            <li><img src="css/images/pc_gallary_01-100.jpg" alt=""></li>
-            <li><img src="css/images/pc_gallary_02-100.jpg" alt=""></li>
-            <li><img src="css/images/pc_gallary_03-100.jpg" alt=""></li>
-            <li><img src="css/images/pc_gallary_04-100.jpg" alt=""></li>
-            <li><img src="css/images/pc_gallary_05-100.jpg" alt=""></li>
+            <li><img src="images/pc_gallary_01-100.jpg" alt=""></li>
+            <li><img src="images/pc_gallary_02-100.jpg" alt=""></li>
+            <li><img src="images/pc_gallary_03-100.jpg" alt=""></li>
+            <li><img src="images/pc_gallary_04-100.jpg" alt=""></li>
+            <li><img src="images/pc_gallary_05-100.jpg" alt=""></li>
             </ul>
 
         </section>
 
         <section class="event" id="EVENT">
-            <h3 class="event_logo"><img src="css/images/event@2x.png" alt="event"></h3>
+            <h3 class="event_logo"><img src="images/event@2x.png" alt="event"></h3>
 
-            <div class="box_text">
-            <ul class="date">
-                <li>2020.06.23</li>
-                <li>2020.03.15</li>
-                <li>2020.02.06</li>
-            </ul>
-
-            <ul class="contents">
-                <li><a href="#">7月はイベント出店のため0/0お休みします</a></li>
-                <li><a href="#">春の新商品新発売。話題のあのブランドとコラボ</a></li>
-                <li><a href="#">コーヒーの日で30％OFFイベントを開催［3日間限定］</a></li>
-            </ul>
+            <div class="text_box">
+                <ul class="contents">
+                    <li href="#">2020.06.23<span>7月はイベント出店のため0/0お休みします</span></li>
+                    <li href="#">2020.03.15<span>春の新商品新発売。話題のあのブランドとコラボ</span></li>
+                    <li href="#">2020.02.06<span>コーヒーの日で30％OFFイベントを開催［3日間限定］</span></li>
+                </ul>
             </div>
         </section>
 
 
         <section class="access" id="ACCESS">
-            <h3 class="access_logo"><img src="css/images/access@2x.png" alt="access"></h3>
+            <h3 class="access_logo"><img src="images/access@2x.png" alt="access"></h3>
             <div class="map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.8278533985062!2d139.7649361148733!3d35.68124053757967!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188bfbd89f700b%3A0x277c49ba34ed38!2z5p2x5Lqs6aeF!5e0!3m2!1sja!2sjp!4v1658376722555!5m2!1sja!2sjp" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.8278533985062!2d139.7649361148733!3d35.68124053757967!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188bfbd89f700b%3A0x277c49ba34ed38!2z5p2x5Lqs6aeF!5e0!3m2!1sja!2sjp!4v1658376722555!5m2!1sja!2sjp" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </section>
 
@@ -130,7 +141,7 @@
 
     <footer>
         <div class="footer">
-            <h3 class="footer_logo"><img src="css/images/design_cafe_logo_footer@2x.png" alt="design_cafe"></h3>
+            <h3 class="footer_logo"><img src="images/design_cafe_logo_footer@2x.png" alt="design_cafe"></h3>
             <ul class="shop">
                 <li>18:00 / CLOSE 24:00</li>
                 <li>〒150-0022</li>
@@ -140,10 +151,24 @@
         </div>
         <small>© 2021 DESIGN CAFE</small>
         <div class="toTop">
-            <a href="#header"><img src="css/images/to_top@2x.png" alt="トップへ戻る"></a>
+            <a href="#header"><img src="images/to_top@2x.png" alt="トップへ戻る"></a>
         </div>
 
     </footer>
     
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+
+    <script>
+        $(function(){
+            $('.sp_btn').click(function (){
+                $('.sp_nav').fadeToggle();
+                $('.sp_btn').toggleClass('open');
+            });
+        });
+
+        
+    </script>
+
 </body>
 </html>
