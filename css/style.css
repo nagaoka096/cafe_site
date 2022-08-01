@@ -140,7 +140,7 @@ img {
 
 
 
-.about_logo {
+.PC_about_logo {
     width: 227px;
     text-align: left;
     margin: 60px 0 60px;
@@ -150,7 +150,7 @@ img {
     width: 50%;
 }
 
-.about_us_img img {
+.about_us_img .img-pc {
     border-radius: 0 0 60px 0;
 
 }
@@ -317,7 +317,7 @@ footer {
 
 }
 
-.footer_logo {
+.PC_footer_logo {
     width: 226px;
 }
 
@@ -341,9 +341,22 @@ small {
 
 }
 
+.img-sp{
+    display: none;
+}
+
+.SP_about_logo {
+    display: none;
+}
+
 .sp_btn {
     display: none;
 }
+
+.SP_footer_logo{
+    display: none;
+}
+
 @media screen  and (max-width:1100px) {
     .pc_nav{
         display: none;
@@ -428,5 +441,152 @@ small {
     "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;;
         text-align: center;
         
+    }
+
+
+    
+    .text_title{
+        font-size: 25px;
+    }
+
+    .text_main{
+        font-size: 75px;
+    }
+
+    .text_sub{
+        font-size: 17px;
+    }
+
+    .about_title{
+        font-size: 35px;
+    }
+    
+
+}
+
+@media screen  and (max-width:767px) {
+
+    /*文字サイズの可変*/
+
+    .text_title{
+        font-size: 3.259vw;
+    }
+
+    .text_main{
+        font-size: 9.778vw;
+    }
+
+    .text_sub{
+        font-size: 2.216vw;
+    }
+
+    .about_title{
+        font-size: 4.563vw;
+    }
+    
+
+
+/*ABOUT US*/
+    .SP_about_logo{
+        display: block;
+        width: 50%;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
+    .about_logo{
+        text-align: center;
+    }
+
+
+    .about_us{
+        display: block;
+        margin: 0 auto;
+    }
+
+    .about_us_img{
+        width: 100vw;
+    }
+
+
+    .img-pc{
+        display: none;
+    }
+
+    .img-sp{
+        display: block;
+    }
+
+    .about_us_text{
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .PC_about_logo{
+        display: none;
+    }
+
+
+/*MENU*/
+    .menu .wrap{
+        display: block;
+        
+    }
+
+    .item{
+        margin: 0 auto;
+        max-width: 100%;
+        
+
+    }
+
+
+/*EVENT*/
+
+    .event span{
+        display: block;
+    }
+
+    .contents li{
+        padding-left: 30px;
+    }
+
+    .contents{
+        max-width: 100%;
+    }
+
+
+
+    .contents span{
+        padding-left: 0;
+        padding-right: 30px;
+
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+
+/*FOOTER*/
+    
+    .footer{
+        display: block;
+        text-align: left;
+    }
+
+    .PC_footer_logo{
+        display: none;
+    }
+
+    .SP_footer_logo{
+        display: block;
+        width: 50%;
+        margin-left: 30px;
+        margin-bottom: 20px;
+    }
+
+    .shop{
+        margin-left: 30px;
     }
 }
